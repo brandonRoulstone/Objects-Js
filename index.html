@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text">Simple Calculator</h1>
+    <div class="main-container">
+        <div class="display-container">
+            <div class="d-container">
+                <input type="text" id="display" readonly>
+            </div>
+        </div>
+        <div class="container">
+            <div class="btn-container">
+        
+                    <button onclick="clearDisplay()" class="btn-btn-sign">C</button>
+                    <button onclick="appendToDisplay('7')" class="btn-btn">7</button>
+                    <button onclick="appendToDisplay('8')" class="btn-btn">8</button>
+                    <button onclick="appendToDisplay('9')" class="btn-btn">9</button>
+                    <button onclick="appendToDisplay('+')" class="btn-btn-sign">+</button>
+        
+                    <button onclick="appendToDisplay('4')" class="btn-btn">4</button>
+                    <button onclick="appendToDisplay('5')" class="btn-btn">5</button>
+                    <button onclick="appendToDisplay('6')" class="btn-btn">6</button>
+                    <button onclick="appendToDisplay('-')" class="btn-btn-sign">-</button>
+                    
+                    <button onclick="appendToDisplay('1')" class="btn-btn">1</button>
+                    <button onclick="appendToDisplay('2')" class="btn-btn">2</button>
+                    <button onclick="appendToDisplay('3')" class="btn-btn">3</button>
+                    <button onclick="appendToDisplay('*')" class="btn-btn-sign">*</button>
+        
+                    <button onclick="appendToDisplay('0')" class="btn-btn">0</button>
+                    <button onclick="appendToDisplay('.')" class="btn-btn">.</button>
+                    <button onclick="calculateResult()" class="btn-btn-result">=</button>
+                    <button onclick="appendToDisplay('/')" class="btn-btn-sign">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
