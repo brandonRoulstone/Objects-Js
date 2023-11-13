@@ -39,26 +39,32 @@ body{
 .btn-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(183, 189, 194);
+    /* background-color: rgb(183, 189, 194); */
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 1px 0px 10px 1px rgb(0, 0, 0);
+    /* box-shadow: 1px 0px 10px 1px rgb(0, 0, 0); */
 }
 
-.btn-btn, .btn-btn-sign, .btn-btn-result{
+.btn-btn, .btn-btn-sign, .btn-btn-result, .btn-btn-dot{
     width: 30px;
     margin: 7px;
     border-radius: 5px;
 }
 
 
-.btn-btn{
+.btn-btn, .btn-btn-dot{
     border: 1px solid yellow;
     background-color: rgb(183, 189, 194);
     font-weight: 900;
 }
 
 .btn-btn:hover{
+    border: 1px solid orangered;
+    transition: 0.3s ease-in-out;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.53);
+}
+.btn-btn-dot:hover{
     border: 1px solid orangered;
     transition: 0.3s ease-in-out;
     color: white;
